@@ -138,8 +138,8 @@ vsearch --fastq_mergepairs "${ORIGINAL_SAMPLE_NAME}_R1.fastq" \
     --reverse "${ORIGINAL_SAMPLE_NAME}_R2.fastq" \
     --fastqout "${EXPERIMENT}_${SAMPLE_NAME}_aligned.fastq" \
     --fastq_minovlen 40 \
-    --fastq_maxdiffs 0 \
-    --fastq_maxee 0.5 \
+    --fastq_maxdiffs 20 \
+    --fastq_maxee 1 \
     --fastq_minmergelen 299 \
     --fastq_maxmergelen 320 \
     --fastq_maxns 0
