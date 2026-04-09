@@ -243,4 +243,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ---
 
 **Last updated:** April 2026  
-**Course website:** [15-17 of April 2025]
+**Course Resources:** [15-17 of April 2025](https://drive.google.com/drive/folders/1NY_ln5l5fzCK_zBzUEEJptGnppBoGaNV?usp=sharing)
