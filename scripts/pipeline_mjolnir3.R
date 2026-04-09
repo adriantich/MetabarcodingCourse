@@ -79,7 +79,7 @@ system(paste0("perl ../SOFT/mkLTG/scripts/mkLTG.pl ",
               experiment, "_THOR_annotated.tsv ",
               " ; sed -e 's/^ID/id/g' ", experiment, "_THOR_annotated.tsv > ",
               experiment, "_FRIGGA.tsv ; ",
-              " sed -i  's/\\t\\{12\\}/&\\t/g' ", experiment, "_FRIGGA.tsv ; ",
+            #   " sed -i  's/\\t\\{12\\}/&\\t/g' ", experiment, "_FRIGGA.tsv ; ",
               " sed -i 's/^ID/id/g' ", experiment, "_ODIN_ESV.tsv "
               ), wait = TRUE, intern = FALSE)
 

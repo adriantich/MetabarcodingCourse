@@ -285,10 +285,11 @@ swarm -d 13 \
     -w "${EXPERIMENT}_${SAMPLE_NAME}_otus.fasta" \
     "${EXPERIMENT}_${SAMPLE_NAME}_renamed.fasta"
 
-sed -i 's/;.*//g' "${EXPERIMENT}_${SAMPLE_NAME}_renamed.fasta"
+sed 's/;.*//g' "${EXPERIMENT}_${SAMPLE_NAME}_renamed.fasta" > \
+    "${EXPERIMENT}_${SAMPLE_NAME}_renamed2.fasta"
 
 seq2tab "${EXPERIMENT}_${SAMPLE_NAME}_esv_table.csv" \
-    "${EXPERIMENT}_${SAMPLE_NAME}_renamed.fasta" \
+    "${EXPERIMENT}_${SAMPLE_NAME}_renamed2.fasta" \
     "ID"
     # create seq2tab file
 
@@ -339,8 +340,11 @@ CORES=5
 ORIGINAL_SAMPLE_NAME="10_25_M1_A_C"
 SAMPLE_NAME="ULO1_sample_006"
 
-vsearch --usearch_global "${EXPERIMENT}_${SAMPLE_NAME}_otus.fasta"\
-    --db "${EXPERIMENT}_${SAMPLE_NAME}_otus.fasta" \
+sed 's/;size.*$//g' "${EXPERIMENT}_${SAMPLE_NAME}_otus.fasta" > \
+    "${EXPERIMENT}_${SAMPLE_NAME}_otus2.fasta"
+
+vsearch --usearch_global "${EXPERIMENT}_${SAMPLE_NAME}_otus2.fasta"\
+    --db "${EXPERIMENT}_${SAMPLE_NAME}_otus2.fasta" \
     --self \
     --id 0.84 \
     --iddef 1 \

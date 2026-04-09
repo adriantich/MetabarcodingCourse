@@ -1,4 +1,4 @@
-# Curso de Metabarcoding - Mallorca 2025
+# Metabarcoding Course
 
 ## Course Description
 
@@ -9,7 +9,7 @@ Metabarcoding is a powerful molecular technique that combines DNA barcoding with
 ## Repository Structure
 
 ```
-CursoMetabarcodingMallorca2025/
+MetabarcodingCourse/
 ├── data/                          # Raw FASTQ files (paired-end)
 ├── scripts/                       # Analysis scripts
 │   └── pipeline_explained.sh      # Main pipeline execution script
@@ -66,8 +66,8 @@ bash Miniforge3-Linux-x86_64.sh
 ```bash
 
 # clone the repository
-git clone https://github.com/adriantich/CursoMetabarcodingMallorca2025.git
-cd CursoMetabarcodingMallorca2025
+git clone https://github.com/adriantich/MetabarcodingCourse.git
+cd MetabarcodingCourse
 
 # Create environment with all required tools
 # conda can also be used but mamba is prefered
@@ -232,8 +232,8 @@ For additional help, please contact course instructors.
 If you use these materials in your research or teaching, please cite:
 
 ```
-Metabarcoding Course Materials - Mallorca 2025
-https://github.com/adriantich/CursoMetabarcodingMallorca2025
+Metabarcoding Course Materials - 
+https://github.com/adriantich/MetabarcodingCourse
 ```
 
 ## License
@@ -242,5 +242,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ---
 
-**Last updated:** November 2025  
-**Course website:** [25-27 of November 2025]
+**Last updated:** April 2026  
+**Course website:** [15-17 of April 2025]

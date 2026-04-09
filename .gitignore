@@ -1,0 +1,8 @@
+tools/assign_motu
+tools/seq2tab
+tools/rename_fasta
+test_one_sample/*fasta
+test_one_sample/*fastq
+test_one_sample/*csv
+test_one_sample/*txt
+test_one_sample/*log
